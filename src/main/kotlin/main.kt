@@ -4,7 +4,12 @@
  * Documentação da minha função
  * */
 fun main(){
-    var teste = "Ola, Mundo!";
+    val teste = "Ola, Mundo!"
+
+    val ling = "Kotlin"
+    val carac = "eh show"
+
+    println("$ling $carac")
 
     println(teste)
     println("${Double.MIN_VALUE} - ${Double.MAX_VALUE}")
