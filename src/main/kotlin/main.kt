@@ -1,12 +1,27 @@
 import java.util.function.ToIntFunction
 
+
+
+fun hello(texto : String){
+    println("Ola $texto")
+
+}
 //Fabio Leandro Lapuinka fabio
+fun soma(a: Int, b: Int) : Int
+{
+
+    return a + b
+
+}
+
 
 /**
  * Documentação da minha função Quebrante
  * */
 fun main(args: Array<String>) {
 
+    hello("oi")
+    hello( texto = "mundo")
     var num1: Int = 0
     var num2: Int = 0
     var op = "+"
