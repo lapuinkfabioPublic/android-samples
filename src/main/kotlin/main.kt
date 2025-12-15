@@ -1,6 +1,11 @@
 import java.util.function.ToIntFunction
 
 
+fun media(n1 : Int = 0, n2 : Int = 0) : Int
+{
+    return (n1 + n2) / 2
+
+}
 
 fun hello(texto : String){
     println("Ola $texto")
@@ -22,6 +27,8 @@ fun main(args: Array<String>) {
 
     hello("oi")
     hello( texto = "mundo")
+    println(media(4,2).toString())
+
     var num1: Int = 0
     var num2: Int = 0
     var op = "+"
