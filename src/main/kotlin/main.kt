@@ -25,6 +25,15 @@ fun soma(a: Int, b: Int) : Int
  * */
 fun main(args: Array<String>) {
 
+    var str = "15"
+
+    println(str.toInt())
+    println(str.toDouble())
+    println(str.toByte())
+    println(str.toFloat())
+
+
+
     hello("oi")
     hello( texto = "mundo")
     println(media(4,2).toString())
