@@ -1,5 +1,28 @@
 import java.util.function.ToIntFunction
 
+fun main(){
+
+    var str="Hello World"
+    println(str[0])
+}
+
+fun main44(){
+
+    var a: Byte = 0
+    var b: Short = 5
+    var c: Int = 10
+    var d: Long = 15L
+    var e: Float = 20F
+    var f: Double = 250000.0
+
+    println(f.toInt().toByte())
+    println(f.toInt().toShort())
+    f.toFloat()
+
+}
+
+fun media2(n1 : Int = 0, n2 : Int = 0) : Int =  (n1 + n2) / 2
+fun media3(n1 : Int = 0, n2 : Int = 0)  =  (n1 + n2) / 2
 
 fun media(n1 : Int = 0, n2 : Int = 0) : Int
 {
@@ -23,7 +46,7 @@ fun soma(a: Int, b: Int) : Int
 /**
  * Documentação da minha função Quebrante
  * */
-fun main(args: Array<String>) {
+fun main6(args: Array<String>) {
 
     var str = "15"
 
