@@ -4,6 +4,8 @@ fun main(){
 
     var str="Hello World"
     println(str[0])
+
+    println(str.length)
 }
 
 fun main44(){
