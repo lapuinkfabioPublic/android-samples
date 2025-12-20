@@ -6,6 +6,30 @@ fun main(){
     println(str[0])
 
     println(str.length)
+    println(str.startsWith("Hello"))
+    println(str.endsWith("orld"))
+    println(str.substring(6))
+    println(str.substring(6, 8))
+    println(str.replace("o","O"))
+    println(str.lowercase())
+    println(str.uppercase())
+
+    println(str.contains("Hello"))
+
+    var nome = "Fabio"
+    println("Ola $nome")
+
+    str.isEmpty()
+    println(str.trim())
+
+    println("Olá %s".format(nome))
+
+    //%s - String
+    //%s - Int
+    //%s - Ponto Flutuante
+    //%s - Char
+    //%s - Boolean
+
 }
 
 fun main44(){
