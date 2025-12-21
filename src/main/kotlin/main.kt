@@ -25,10 +25,16 @@ fun main(){
     println("Olá %s".format(nome))
 
     //%s - String
-    //%s - Int
-    //%s - Ponto Flutuante
-    //%s - Char
-    //%s - Boolean
+    //%d - Int
+    //%f - Ponto Flutuante
+    //%c - Char
+    //%b - Boolean
+
+    val value = 5
+    val salario = 16855.95
+
+    println("%.2f  %d ".format(salario, value))
+
 
 }
 
