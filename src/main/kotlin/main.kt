@@ -35,7 +35,7 @@ fun main(){
 
     println("%.2f  %d ".format(salario, value))
 
-
+    println("%.2f  %09d ".format(salario, value))
 }
 
 fun main44(){
