@@ -1,3 +1,4 @@
+import java.util.Locale
 import java.util.function.ToIntFunction
 
 fun main(){
@@ -35,7 +36,7 @@ fun main(){
 
     println("%.2f  %d ".format(salario, value))
 
-    println("%.2f  %09d ".format(salario, value))
+    println("%.2f  %09d ".format(Locale.US, salario, value))
 }
 
 fun main44(){
