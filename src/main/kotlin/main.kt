@@ -1,7 +1,7 @@
 import java.util.Locale
 import java.util.function.ToIntFunction
 
-fun main(){
+fun main233(){
 
     var str="Hello World"
     println(str[0])
