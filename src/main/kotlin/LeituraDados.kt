@@ -1,5 +1,6 @@
 fun main(){
 
+    println("Milhas %f".format(milhas(8.0)))
     println("Dados: ")
     println(chars("Hello World!"))
 
@@ -21,5 +22,10 @@ fun tempo( ano : Int) {
 
 fun chars( palavra: String) : Int {
     return palavra.length
+
+}
+
+fun milhas( km: Double) : Double {
+    return km * 1.6
 
 }
