@@ -1,3 +1,6 @@
+import java.util.Locale
+import java.util.Locale.getDefault
+
 fun main() {
 
 
@@ -51,5 +54,7 @@ fun leString() : String
 }
 fun TrocaString(palavra : String) : String
 {
+    if(!palavra.contains("a"))
+        return palavra.uppercase(getDefault()).toString()
     return palavra.lowercase().toString().replace("a","X", true)
 }
