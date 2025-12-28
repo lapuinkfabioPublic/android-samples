@@ -1,5 +1,8 @@
 fun main() {
 
+
+    var palavra = leString()
+    println(TrocaString(palavra ))
     println("Temperatura %f F".format(CelsiusFahrenheit(10.0)))
     println("Milhas %f".format(milhas(8.0)))
     println("Dados: ")
@@ -38,4 +41,15 @@ fun ex3(n: Double): Double {
 fun CelsiusFahrenheit(celsius : Double): Double
 {
     return  (celsius * 9 / 5 ) + 32
+}
+
+fun leString() : String
+{
+    println("Digite uma string:")
+    return readln()
+
+}
+fun TrocaString(palavra : String) : String
+{
+    return palavra.lowercase().toString().replace("a","X", true)
 }
