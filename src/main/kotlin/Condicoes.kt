@@ -4,8 +4,11 @@ fun main(){
 
     println("Digite o Tipo")
     var tipo = readln().toInt()
+    println("Total Anos Experiência")
+    var anos = readln().toInt()
 
-    var bonus  = bonus(tipo)
+    var bonus  = bonus(tipo, anos)
+
 
     println(" O Bonus foi de : %f".format(bonus))
 
@@ -14,18 +17,26 @@ fun main(){
     //programar é pode estar aqui no computador e fazer magica
 }
 
-fun bonus(Tipo : Int) : Float{
+fun bonus(Tipo : Int, Anos: Int) : Float{
 
 
-    if (Tipo == 0)
-        return 2000F //Gerentes
-   else if (Tipo == 1)
-        return 1500F //Cordenadores
-   else if (Tipo == 2)
-        return 1000F //Eng Software
+    return if (Tipo == 0) {
+        if(Anos < 2)
+            2000F //Gerentes
+        else
+            3000F
+    } else if (Tipo == 1)
+    {
+        if(Anos < 2)
+            1500F //Gerentes
+        else
+            1800F
+    }
+    else if (Tipo == 2)
+        1000F //Eng Software
     else if (Tipo == 3)
-        return 500F //Estagiários
+        500F //Estagiários
     else
-        return 0F
+        0F
 
 }
