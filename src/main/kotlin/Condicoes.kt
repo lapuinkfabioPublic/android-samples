@@ -1,8 +1,26 @@
 import java.util.function.ToIntFunction
 
 fun main(){
-    portaria()
+    repeticao(10)
+//portaria()
 }
+
+fun repeticao(Vezes : Int)
+{
+        for(i in 1..Vezes step 2)
+        {
+            println(i)
+
+        }
+
+    for(i in Vezes  downTo 0 step 2)
+    {
+        println(i)
+
+    }
+
+}
+
 fun bonus()
 {
     println("Digite o Tipo")
@@ -35,6 +53,25 @@ fun portaria(): Boolean{
         return false
     }
 
+    when(Tipo){
+        1->{
+            println("Comum")
+        }
+        2->{
+            println("Premium")
+        }
+        3->{
+            println("Luxo")
+        }
+        in (4..5)->
+        {
+            println("Diamante")
+        }
+        else -> {
+            println("Acesso Negado. Tipo de codigo do convite")
+            return false
+        }
+    }
     if(Tipo == 1) {
         println("Comum")
     }
