@@ -9,6 +9,9 @@ fun repeticao(Vezes : Int)
 {
         for(i in 1..Vezes step 2)
         {
+            if(i >= 4)
+                break
+
             println(i)
 
         }
