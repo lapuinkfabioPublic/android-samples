@@ -1,8 +1,45 @@
 import java.util.function.ToIntFunction
 
 fun main(){
-    repeticao(10)
-//portaria()
+    //repeticao(10)
+    //enquanto(100)
+    //portaria()
+
+    println("Novo Deposito: %f".format(Aplicacao(100.0F,2.5F)))
+    println("Novo Deposito: %f".format(Aplicacao(100.0F,5.0F)))
+    println("Novo Deposito: %f".format(Aplicacao(100.0F,25.0F)))
+}
+
+
+
+fun Aplicacao(salario : Float, deposito: Float): Float{
+
+    var percentage : Float
+    percentage= (salario/100)*5
+
+    if(deposito >= percentage){
+        println("Aplica Regra")
+        return deposito *2
+    }
+    else
+    {
+       println("Regra Ignorada: Percentage %f".format(percentage))
+        return deposito
+    }
+
+
+}
+fun enquanto(Maximo : Int)
+{
+    var a: Int
+    a = 1
+    while(a < Maximo) {
+
+        println("$a ")
+
+        a ++
+    }
+
 }
 
 fun repeticao(Vezes : Int)
