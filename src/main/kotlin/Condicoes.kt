@@ -18,11 +18,9 @@ fun repeticao(Vezes : Int)
     for(i in Vezes  downTo 0 step 2)
     {
         println(i)
-
     }
 
 }
-
 fun bonus()
 {
     println("Digite o Tipo")
