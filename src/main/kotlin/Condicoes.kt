@@ -10,8 +10,29 @@ fun main(){
     println("Digite palavra: ")
     palavra = readLine().toString()
     println( invertePalavra(palavra))
+
+    println("Digite palavra: ")
+    palavra = readLine().toString()
+    println("Tem mesma quantidade de chars iguais: %b".format(comparaPalavra(palavra)))
 }
 
+
+fun comparaPalavra(palavra: String): Boolean{
+
+    var countX : Int = 0
+    var countO : Int = 0
+
+    for(i in palavra.indices){
+
+        if(palavra[i] == 'x'){
+            countX++
+        }
+        if(palavra[i] == 'o'){
+            countO++
+        }
+    }
+    return countX == countO
+}
 
 fun invertePalavra(palavra : String) : String
 {
