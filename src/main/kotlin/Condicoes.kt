@@ -1,7 +1,44 @@
 import java.util.function.ToIntFunction
+//faz, tempo, Obrigado professor de compiladores
 
 fun main(){
-    while1() // contador de baloes capacidade
+    divisoes() // contador de baloes capacidade
+}
+
+
+fun divisoes(){
+    var count = 0
+    for(i in 1..100){
+
+        count = 0
+
+        if(i%3==0 && i%5==0) {
+            count ++
+            println("Both %d Buzz".format(i))
+            println("Both %d Fizz".format(i))
+
+        }
+        else {
+
+            if (i % 3 == 0) {
+                count++
+                println("Only %d Buzz".format(i))
+
+            }
+            if (i % 5 == 0) {
+                count++
+                println("Only %d Fizz".format(i))
+
+            }
+        }
+
+        if(count == 0)
+        {
+            println("None %d".format(i))
+        }
+
+    }
+
 }
 
 fun while1(){
