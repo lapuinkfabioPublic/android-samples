@@ -1,10 +1,22 @@
 import java.util.function.ToIntFunction
-//faz, tempo, Obrigado professor de compiladores
+//faz, tempo, Obrigado professor de compiladores 1121
 
 fun main(){
-    divisoes() // contador de baloes capacidade
+    //divisoes() // contador de baloes capacidade
+
+
+    var palavra : String
+
+    println("Digite palavra: ")
+    palavra = readLine().toString()
+    println( invertePalavra(palavra))
 }
 
+
+fun invertePalavra(palavra : String) : String
+{
+    return palavra.reversed()
+}
 
 fun divisoes(){
     var count = 0
