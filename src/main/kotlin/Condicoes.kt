@@ -1,6 +1,25 @@
 import java.util.function.ToIntFunction
 
 fun main(){
+    while1() // contador de baloes capacidade
+}
+
+fun while1(){
+    var capacidade = 2000F
+    var balao = 0F
+    var contador = 0
+    while (capacidade >= balao + 7F)
+    {
+
+        balao += 7F
+        contador = contador + 1
+    }
+    println("Volume do balão atual: %f".format(balao))
+    println("Quantidade de balões: %d".format(contador))
+
+}
+
+fun depositos(){
     //repeticao(10)
     //enquanto(100)
     //portaria()
@@ -10,7 +29,15 @@ fun main(){
     println("Novo Deposito: %f".format(Aplicacao(100.0F,25.0F)))
 }
 
+fun exe4(){
+    var soma = 0
 
+    for(valor in 1 .. 500)
+    {
+        soma += valor
+    }
+    println("Soma $soma")
+}
 
 fun Aplicacao(salario : Float, deposito: Float): Float{
 
