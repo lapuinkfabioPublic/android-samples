@@ -1,7 +1,17 @@
 import java.util.function.ToIntFunction
 //faz, tempo, Obrigado professor de compiladores 1121
 
+
+
+
 fun main(){
+    programaInverte01()
+}
+
+
+
+
+fun programaInverte01(){
     //divisoes() // contador de baloes capacidade
 
 
@@ -14,9 +24,8 @@ fun main(){
     println("Digite palavra: ")
     palavra = readLine().toString()
     println("Tem mesma quantidade de chars iguais: %b".format(comparaPalavra(palavra)))
+
 }
-
-
 fun comparaPalavra(palavra: String): Boolean{
 
     var countX : Int = 0
