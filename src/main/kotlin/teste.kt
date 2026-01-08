@@ -3,7 +3,7 @@ fun main(){
     if(countXO("fabio"))
         println("teste OK")
     else
-        println("teste failed!")
+        println("teste failed!                                                                                  ")
 }
 
 fun countXO(str: String): Boolean {
