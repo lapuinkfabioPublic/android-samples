@@ -13,10 +13,10 @@ fun main(){
 fun verificaQuadrado()
 {
     println("Informe o lado 1:")
-    var lado1 =  lerInt()
+    val lado1 =  lerInt()
 
     println("Informe o lado 2:")
-    var lado2 =  lerInt()
+    val lado2 =  lerInt()
 
     if(lado1 == lado2)
         println("lados iguais...")
@@ -28,16 +28,16 @@ fun verificaQuadrado()
 * */
 fun lerInt(): Int
 {
-    var leituraInt : Int = 0
+    var leituraInt : Int
 
     while(true) {
         try {
             println("Number >0:")
-            leituraInt = readLine()!!.toInt()
+            leituraInt = readln().toInt()
             if(leituraInt > 0) //Regra 1 - Somente Numeros Positivos
                 break
 
-        } catch (e: Exception) {
+        } catch (_: Exception) {
 
         }
     }
@@ -46,56 +46,3 @@ fun lerInt(): Int
 
 }
 
-fun leString(){
-
-    var str: String? = null
-
-    str?.lowercase()
-    str?.length
-    str?.contains("abc")
-
-    str?.let{
-        //scope function -> representa um scopo de função
-        it.length
-        it.lowercase()
-        it.contains("abc")
-    }
-
-}
-
-fun exEx(){
-    var str: String? = "coxa"
-    var abc = "obas"
-
-    //tipo 01
-    try
-    {
-        println(str!!.length)
-        println(10/0)
-        println(abc[100])
-    }
-    catch (e: NullPointerException)
-    {
-        println(e)
-    }
-    catch (e: ArithmeticException)
-    {
-        println(e)
-    }
-    catch (e: StringIndexOutOfBoundsException)
-    {
-        println(e)
-    }
-    catch (e: Exception)
-    {
-        println(e)
-    }
-    finally {
-        println("OK")
-    }
-
-    var str2 =  str ?: "teste"
-
-    println(str2 )
-
-}
