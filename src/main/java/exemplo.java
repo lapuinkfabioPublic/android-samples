@@ -6,7 +6,7 @@ public class exemplo
         try {
             System.out.println(str.length());
         } catch (Exception e) {
-            System.out.println("Houve um erro:" + e.toString());
+            System.out.println("Houve um erro:" + e);
         }
     }
 }

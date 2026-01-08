@@ -4,11 +4,11 @@ import java.util.Locale.getDefault
 fun main() {
 
     var dia = 0
-    println(DiaSemana(dia))
+    println(diaSemana(dia))
 
     var palavra = leString()
-    println(TrocaString(palavra ))
-    println("Temperatura %f F".format(CelsiusFahrenheit(10.0)))
+    println(trocaString(palavra ))
+    println("Temperatura %f F".format(celsiusFahrenheit(10.0)))
     println("Milhas %f".format(milhas(8.0)))
     println("Dados: ")
     println(chars("Hello World!"))
@@ -43,7 +43,7 @@ fun ex3(n: Double): Double {
     return n * 3
 }
 
-fun CelsiusFahrenheit(celsius : Double): Double
+fun celsiusFahrenheit(celsius : Double): Double
 {
     return  (celsius * 9 / 5 ) + 32
 }
@@ -54,13 +54,13 @@ fun leString() : String
     return readln()
 
 }
-fun TrocaString(palavra : String) : String
+fun trocaString(palavra : String) : String
 {
     if(!palavra.contains("a"))
         return palavra.uppercase(getDefault()).toString()
     return palavra.lowercase().toString().replace("a","X", true)
 }
-fun DiaSemana(dia: Int): String {
+fun diaSemana(dia: Int): String {
     if(dia == 0)
         return "Domingo"
     else if(dia == 1)
